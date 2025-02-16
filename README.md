@@ -50,4 +50,4 @@ ffmpeg -stream_loop -1 -re -i "your_local_video.mp4" -c:v libx264 -preset ultraf
 webrtc-streamer rtsp://localhost:8554/stream
 ```
 
-此时访问webrtc-streamer默认的localhost:8000，检查推流是否成功，，成功可以进行后续操作了
+此时访问webrtc-streamer默认的localhost:8000，检查推流是否成功，成功可以进行后续操作了
