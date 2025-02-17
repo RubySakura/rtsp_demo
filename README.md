@@ -27,7 +27,6 @@ mediamtx
 ### step2
 执行ffmpeg命令
 ```bash
-ffmpeg -stream_loop -1 -re -i demo.mp4 -c:v libx264 -preset ultrafast -tune zerolatency -pix_fmt yuv420p -f rtsp rtsp://127.0.0.1:8554/stream
 ffmpeg -stream_loop -1 -re -i demo.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p -flags:v +global_header -bsf:v h264_mp4toannexb -g 30 -keyint_min 30 -c:a aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/stream
 ```
 #### 输入相关参数
