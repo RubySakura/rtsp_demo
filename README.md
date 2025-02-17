@@ -68,6 +68,7 @@ c:a 是 codec:audio 的缩写，用于指定音频编码器。这里选择了 AA
 
 ### step3
 测试rtsp推流，打开vlc播放器，媒体 - 打开网络串流，填写 rtsp://localhost:8554/stream，可以正常播放视频证明rtsp推流可用。
+
 也可以直接使用ffmpeg提供的ffplay命令测试，执行命令
 ```
 ffplay rtsp://127.0.0.1:8554/stream
